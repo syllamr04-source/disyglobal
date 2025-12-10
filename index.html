@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DISY GLOBAL - Expert en Groupage & Expédition Internationale</title>
+    <meta name="description" content="Expédition Abidjan-Paris-USA-Chine-Dubaï. Service fiable et sécurisé. Groupage maritime et aérien.">
+    
+    <!-- ==========================================================================
+         OPTIMISATION PARTAGE SOCIAL (WHATSAPP / FACEBOOK)
+         Ces balises permettent d'avoir un bel aperçu quand on partage le lien
+    ========================================================================== -->
+    <meta property="og:title" content="DISY GLOBAL - Expédition & Groupage International">
+    <meta property="og:description" content="Vos colis entre de bonnes mains. Abidjan ↔ Paris, Chine, USA, Dubaï. Fiabilité garantie.">
+    <meta property="og:image" content="https://i.postimg.cc/gJgDYkXq/1.png"> <!-- Idéalement, mettre ici une image de bannière promo -->
+    <meta property="og:url" content="https://disyglobal.com">
+    <meta property="og:type" content="website">
+
+    <!-- FAVICON (Petite icône dans l'onglet) -->
+    <link rel="icon" href="https://i.postimg.cc/gJgDYkXq/1.png" type="image/png">
+
+    <!-- ESPACE MARKETING DIGITAL -->
+    <!-- Collez ici vos scripts : Google Analytics (GA4), Facebook Pixel, TikTok Pixel -->
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        disyBlue: '#0e2b48',
+                        disyOrange: '#ff6b00',
+                        disyLight: '#f3f4f6',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    animation: {
+                        'bounce-slow': 'bounce 3s infinite',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .hero-bg {
+            background-image: linear-gradient(rgba(14, 43, 72, 0.85), rgba(14, 43, 72, 0.7)), url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        details > summary {
+            list-style: none;
+        }
+        details > summary::-webkit-details-marker {
+            display: none;
+        }
+        /* Modal CGV */
+        .modal {
+            transition: opacity 0.25s ease;
+        }
+        body.modal-active {
+            overflow-x: hidden;
+            overflow-y: visible !important;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-white">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-24 md:h-28">
+                <div class="flex-shrink-0 flex items-center">
+                    <!-- LOGO -->
+                    <img class="h-20 md:h-24 w-auto transition-all duration-300" src="https://i.postimg.cc/gJgDYkXq/1.png" alt="DISY Global Logo">
+                </div>
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#accueil" class="text-gray-700 hover:text-disyOrange font-medium">Accueil</a>
+                    <a href="#comment-ca-marche" class="text-gray-700 hover:text-disyOrange font-medium">Fonctionnement</a>
+                    <a href="#destinations" class="text-gray-700 hover:text-disyOrange font-medium">Tarifs</a>
+                    <a href="#faq" class="text-gray-700 hover:text-disyOrange font-medium">FAQ</a>
+                    <a href="https://wa.me/2250172914747" class="bg-disyOrange text-white px-5 py-2 rounded-full font-bold hover:bg-orange-600 transition shadow-lg">
+                        <i class="fab fa-whatsapp mr-2"></i> Nous Contacter
+                    </a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <div class="flex items-center md:hidden">
+                    <button onclick="toggleMenu()" class="text-disyBlue hover:text-disyOrange focus:outline-none p-2">
+                        <i class="fas fa-bars text-3xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#accueil" onclick="toggleMenu()" class="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-disyOrange">Accueil</a>
+                <a href="#comment-ca-marche" onclick="toggleMenu()" class="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-disyOrange">Comment ça marche</a>
+                <a href="#destinations" onclick="toggleMenu()" class="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-disyOrange">Tarifs</a>
+                <a href="#faq" onclick="toggleMenu()" class="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-disyOrange">FAQ</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="accueil" class="hero-bg h-screen min-h-[600px] flex items-center justify-center text-white pt-24">
+        <div class="text-center px-4 max-w-4xl mx-auto animate-fade-in-up">
+            <span class="bg-disyOrange text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide mb-4 inline-block">Leader en fiabilité</span>
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                Vos colis entre de <br><span class="text-disyOrange">bonnes mains.</span>
+            </h1>
+            <p class="text-lg md:text-xl mb-8 text-gray-200 max-w-2xl mx-auto">
+                Spécialiste du groupage et de l'expédition express. Abidjan, Paris, Chine, USA, Dubaï. Nous privilégions la sécurité et la qualité de service.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#calculateur" class="bg-white text-disyBlue font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition shadow-lg transform hover:-translate-y-1">
+                    Estimer mon colis
+                </a>
+                <a href="https://wa.me/2250172914747" class="bg-disyOrange text-white font-bold py-3 px-8 rounded-full hover:bg-orange-600 transition shadow-lg transform hover:-translate-y-1">
+                    <i class="fab fa-whatsapp mr-2"></i> Devis Express
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION COMMENT CA MARCHE -->
+    <section id="comment-ca-marche" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-disyBlue">Comment ça marche ?</h2>
+                <p class="mt-4 text-gray-600">Expédier avec DISY, c'est simple comme 1, 2, 3.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center relative">
+                <div class="hidden md:block absolute top-12 left-0 w-full h-1 bg-gray-100 -z-10"></div>
+
+                <!-- Etape 1 -->
+                <div class="bg-white p-6 rounded-xl">
+                    <div class="w-24 h-24 bg-disyBlue text-white rounded-full flex items-center justify-center mx-auto mb-6 text-3xl border-4 border-white shadow-lg">
+                        <i class="fas fa-box-open"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-disyBlue">1. Dépôt ou Commande</h3>
+                    <p class="text-gray-600 text-sm">
+                        Déposez à la <strong>Riviera Palmeraie</strong>.<br>
+                        <span class="text-disyOrange font-bold">Ramassage Treichville & Marcory</span> les Lundis et Mercredis.<br>
+                        Ou faites livrer vos achats en ligne chez nous.
+                    </p>
+                </div>
+
+                <!-- Etape 2 -->
+                <div class="bg-white p-6 rounded-xl">
+                    <div class="w-24 h-24 bg-disyOrange text-white rounded-full flex items-center justify-center mx-auto mb-6 text-3xl border-4 border-white shadow-lg">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-disyBlue">2. Expédition Sécurisée</h3>
+                    <p class="text-gray-600 text-sm">
+                        Nous groupons et protégeons vos colis.<br>
+                        <strong>Douane Incluse</strong> pour Chine & Groupage.<br>
+                        Délais garantis et suivi constant.
+                    </p>
+                </div>
+
+                <!-- Etape 3 -->
+                <div class="bg-white p-6 rounded-xl">
+                    <div class="w-24 h-24 bg-disyBlue text-white rounded-full flex items-center justify-center mx-auto mb-6 text-3xl border-4 border-white shadow-lg">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-disyBlue">3. Réception</h3>
+                    <p class="text-gray-600 text-sm">
+                        Retrait en agence ou <strong>livraison à domicile</strong>.<br>
+                        Votre satisfaction est notre priorité.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION PLANNING / PROMO -->
+    <section id="planning" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold text-disyBlue">Le Mur d'Affichage</h2>
+                <div class="w-20 h-1 bg-disyOrange mx-auto mt-4"></div>
+                <p class="mt-4 text-gray-600">Promotions en cours et Calendrier des départs.</p>
+            </div>
+            
+            <div class="bg-white rounded-2xl p-2 md:p-6 shadow-md text-center max-w-5xl mx-auto border border-gray-200">
+                <div class="w-full flex justify-center bg-gray-100 rounded-xl overflow-hidden">
+                    <!-- IMAGE PROMO (MODIFIABLE) -->
+                    <img src="https://images.unsplash.com/photo-1506606352681-649023fac596?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                         alt="Affiche Promo ou Calendrier" 
+                         class="w-full max-h-[600px] object-contain">
+                </div>
+                <p class="mt-4 text-sm text-gray-500 italic">
+                    <i class="fas fa-info-circle mr-1"></i> Vérifiez toujours la disponibilité via WhatsApp.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TARIFS & DESTINATIONS -->
+    <section id="destinations" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-disyBlue">Nos Tarifs</h2>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">La qualité a un prix, la tranquillité d'esprit n'en a pas.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- CARTE: ABIDJAN <-> PARIS -->
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="bg-disyBlue p-6 text-white text-center relative">
+                        <i class="fas fa-plane-departure text-4xl absolute left-4 top-6 opacity-20"></i>
+                        <h3 class="text-2xl font-bold">Abidjan <i class="fas fa-exchange-alt mx-2 text-sm text-disyOrange"></i> Paris</h3>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <div class="flex justify-between items-center border-b pb-2">
+                            <span class="text-gray-600">Abidjan vers Paris</span>
+                            <span class="font-bold text-disyOrange text-lg">dès 6 500 F/kg</span>
+                        </div>
+                        <div class="flex justify-between items-center border-b pb-2">
+                            <span class="text-gray-600">Paris vers Abidjan</span>
+                            <span class="font-bold text-disyOrange text-lg">dès 7 000 F/kg</span>
+                        </div>
+                        <div class="bg-blue-50 p-3 rounded-lg text-sm text-disyBlue mt-4">
+                            <i class="fas fa-check-circle mr-1"></i> Douane incluse (GP)<br>
+                            <i class="fas fa-info-circle mr-1"></i> Tarif spécial Parfums/Cosmétiques
+                        </div>
+                        <a href="https://wa.me/2250172914747?text=Bonjour,%20je%20souhaite%20expédier%20entre%20Paris%20et%20Abidjan" class="block w-full text-center bg-gray-100 text-disyBlue py-2 rounded-lg font-semibold hover:bg-disyOrange hover:text-white transition">
+                            <i class="fab fa-whatsapp mr-1"></i> Commander
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARTE: IMPORT CHINE -->
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="bg-red-700 p-6 text-white text-center relative">
+                        <i class="fas fa-globe-asia text-4xl absolute left-4 top-6 opacity-20"></i>
+                        <h3 class="text-2xl font-bold">Import Chine</h3>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <div class="flex justify-between items-center border-b pb-2">
+                            <span class="text-gray-600">Express (3-6j)</span>
+                            <span class="font-bold text-disyOrange text-lg">15 000 F/kg</span>
+                        </div>
+                        <div class="flex justify-between items-center border-b pb-2">
+                            <span class="text-gray-600">Groupage GP</span>
+                            <span class="font-bold text-disyOrange text-lg">9 500 F/kg</span>
+                        </div>
+                        <div class="flex justify-between items-center border-b pb-2">
+                            <span class="text-gray-600">Maritime (CBM)</span>
+                            <div>
+                                <span class="font-bold text-disyOrange text-lg block text-right">290 000 F</span>
+                                <span class="text-xs text-gray-500 block text-right">Délai : 60 jours</span>
+                            </div>
+                        </div>
+                        <div class="bg-red-50 p-3 rounded-lg text-sm text-red-800 mt-4 font-semibold">
+                            <i class="fas fa-check"></i> Douane INCLUSE (GP/Maritime)
+                        </div>
+                         <a href="https://wa.me/2250172914747?text=Bonjour,%20je%20souhaite%20importer%20de%20Chine" class="block w-full text-center bg-gray-100 text-disyBlue py-2 rounded-lg font-semibold hover:bg-disyOrange hover:text-white transition">
+                            <i class="fab fa-whatsapp mr-1"></i> Commander
+                         </a>
+                    </div>
+                </div>
+
+                <!-- CARTE: USA & DUBAÏ -->
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="bg-indigo-900 p-6 text-white text-center relative">
+                        <i class="fas fa-flag-usa text-4xl absolute left-4 top-6 opacity-20"></i>
+                        <h3 class="text-2xl font-bold">USA & Dubaï</h3>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <p class="font-bold text-disyBlue border-b pb-1">Abidjan <i class="fas fa-arrow-right text-xs"></i> New York</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600 text-sm">Plus de 10kg</span>
+                            <span class="font-bold text-disyOrange">12 000 F/kg</span>
+                        </div>
+                        <div class="flex justify-between items-center pb-2 border-b">
+                            <span class="text-gray-600 text-sm">Standard</span>
+                            <span class="font-bold text-disyOrange">15 000 F/kg</span>
+                        </div>
+                        
+                        <p class="font-bold text-disyBlue border-b pb-1 mt-4">Express Monde</p>
+                        <div class="bg-indigo-50 p-2 rounded text-xs text-indigo-900 mb-2">
+                            <i class="fas fa-exclamation-triangle"></i> Douane à charge client (Express)
+                        </div>
+
+                         <a href="https://wa.me/2250172914747?text=Bonjour,%20je%20suis%20intéressé%20par%20USA/Dubai" class="block w-full text-center bg-gray-100 text-disyBlue py-2 rounded-lg font-semibold hover:bg-disyOrange hover:text-white transition">
+                            <i class="fab fa-whatsapp mr-1"></i> Commander
+                         </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALCULATEUR DE PRIX -->
+    <section id="calculateur" class="py-16 bg-gray-50 border-t border-gray-200">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="bg-disyBlue rounded-2xl shadow-2xl overflow-hidden">
+                <div class="p-8 md:p-10 text-white">
+                    <h2 class="text-3xl font-bold mb-2 flex items-center">
+                        <i class="fas fa-calculator text-disyOrange mr-3"></i> Estimez votre tarif
+                    </h2>
+                    <p class="text-blue-200 mb-8">Obtenez une estimation rapide. (Hors frais de douane spécifiques ou emballages spéciaux)</p>
+                    
+                    <div class="space-y-6">
+                        <!-- Choix de la route -->
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Trajet / Service</label>
+                            <select id="calc-route" onchange="updateUnitLabel()" class="w-full p-4 rounded-lg text-gray-900 bg-white focus:ring-2 focus:ring-disyOrange outline-none">
+                                <option value="abi-par">Abidjan vers Paris (6500 F/kg)</option>
+                                <option value="par-abi">Paris vers Abidjan (7000 F/kg)</option>
+                                <option value="chi-exp">Chine Express (15000 F/kg)</option>
+                                <option value="chi-gp">Chine Groupage (9500 F/kg)</option>
+                                <option value="chi-sea">Chine Maritime (290 000 F/CBM)</option>
+                                <option value="usa-abi">Abidjan vers New York (12k ou 15k/kg)</option>
+                            </select>
+                        </div>
+
+                        <!-- Poids ou Volume -->
+                        <div>
+                            <label id="calc-label" class="block text-sm font-medium mb-2">Poids du colis (en Kg)</label>
+                            <input type="number" id="calc-weight" placeholder="Ex: 5" class="w-full p-4 rounded-lg text-gray-900 bg-white focus:ring-2 focus:ring-disyOrange outline-none">
+                        </div>
+
+                        <!-- Résultat -->
+                        <button onclick="calculatePrice()" class="w-full bg-disyOrange hover:bg-orange-600 text-white font-bold py-4 rounded-lg transition transform active:scale-95 shadow-lg text-lg">
+                            CALCULER L'ESTIMATION
+                        </button>
+
+                        <div id="calc-result" class="hidden mt-6 bg-white/10 rounded-lg p-6 text-center border border-white/20">
+                            <p class="text-sm uppercase tracking-wide text-gray-300">Estimation Total</p>
+                            <p class="text-4xl font-bold text-white my-2" id="calc-amount">0 FCFA</p>
+                            <p class="text-xs text-blue-200 italic">*Ce montant est indicatif. Contactez-nous pour valider.</p>
+                            
+                            <a id="whatsapp-link-calc" href="#" class="inline-block mt-4 text-sm bg-white text-disyBlue px-4 py-2 rounded font-bold hover:bg-gray-100">
+                                Valider sur WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION SERVICES PLUS -->
+    <section id="services" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1 relative">
+                    <!-- Image Paiement Sécurisé -->
+                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Paiement en ligne sécurisé" class="rounded-lg shadow-2xl relative z-10">
+                    <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-disyOrange rounded-full opacity-20 z-0"></div>
+                </div>
+                <div class="order-1 md:order-2">
+                    <span class="text-disyOrange font-bold tracking-wider uppercase text-sm">Service Conciergerie</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-disyBlue mb-6 mt-2">Achetez en ligne, nous livrons chez vous.</h2>
+                    <p class="text-gray-600 mb-6 text-lg">
+                        Validation de paniers Alibaba, Shein, Amazon... Nous payons pour vous en toute sécurité.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <p class="text-gray-700"><strong>Paiement Sécurisé :</strong> Pas de carte bancaire ? Nous gérons le paiement.</p>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <p class="text-gray-700"><strong>Livraison & Collecte :</strong> Nous livrons et récupérons vos colis.</p>
+                        </li>
+                    </ul>
+                    <a href="https://wa.me/2250172914747?text=Bonjour,%20je%20veux%20faire%20valider%20un%20panier" class="inline-block mt-6 bg-disyBlue text-white px-6 py-3 rounded-lg hover:bg-opacity-90 transition">
+                        Faire valider mon panier
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION FAQ -->
+    <section id="faq" class="py-16 bg-disyLight">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-disyBlue">Questions Fréquentes</h2>
+                <div class="w-20 h-1 bg-disyOrange mx-auto mt-4"></div>
+            </div>
+
+            <div class="space-y-4">
+                <!-- Question 1 -->
+                <details class="group bg-white rounded-xl shadow-sm p-4 cursor-pointer">
+                    <summary class="flex justify-between items-center font-bold text-disyBlue text-lg">
+                        Acceptez-vous les parfums et produits cosmétiques ?
+                        <span class="transition group-open:rotate-180"><i class="fas fa-chevron-down text-disyOrange"></i></span>
+                    </summary>
+                    <div class="text-gray-600 mt-4 leading-relaxed pl-2 border-l-4 border-disyOrange">
+                        Oui, absolument ! Nous transportons les parfums, laits corporels et autres cosmétiques. Notez cependant que les tarifs pour ces produits sont <strong>légèrement différents</strong> des colis ordinaires. Contactez-nous pour une cotation précise.
+                    </div>
+                </details>
+
+                <!-- Question 2 -->
+                <details class="group bg-white rounded-xl shadow-sm p-4 cursor-pointer">
+                    <summary class="flex justify-between items-center font-bold text-disyBlue text-lg">
+                        Les frais de douane sont-ils inclus ?
+                        <span class="transition group-open:rotate-180"><i class="fas fa-chevron-down text-disyOrange"></i></span>
+                    </summary>
+                    <div class="text-gray-600 mt-4 leading-relaxed pl-2 border-l-4 border-disyOrange">
+                        Cela dépend du service choisi :<br>
+                        <ul class="list-disc ml-5 mt-2">
+                            <li><strong>Groupage & Chine :</strong> OUI, la douane est incluse.</li>
+                            <li><strong>Express International (DHL/FedEx, etc.) :</strong> NON, la douane est à la charge du client à l'arrivée dans le pays de destination.</li>
+                        </ul>
+                    </div>
+                </details>
+
+                <!-- Question 3 -->
+                <details class="group bg-white rounded-xl shadow-sm p-4 cursor-pointer">
+                    <summary class="flex justify-between items-center font-bold text-disyBlue text-lg">
+                        Où sont situés vos dépôts ?
+                        <span class="transition group-open:rotate-180"><i class="fas fa-chevron-down text-disyOrange"></i></span>
+                    </summary>
+                    <div class="text-gray-600 mt-4 leading-relaxed pl-2 border-l-4 border-disyOrange">
+                        Notre siège est à la <strong>Riviera Palmeraie, Rue Ministre</strong>.<br>
+                        Nous organisons aussi des ramassages à <strong>Treichville et Marcory</strong> tous les Lundis et Mercredis.
+                    </div>
+                </details>
+
+                <!-- Question 4 -->
+                <details class="group bg-white rounded-xl shadow-sm p-4 cursor-pointer">
+                    <summary class="flex justify-between items-center font-bold text-disyBlue text-lg">
+                        Faites-vous la livraison à domicile ?
+                        <span class="transition group-open:rotate-180"><i class="fas fa-chevron-down text-disyOrange"></i></span>
+                    </summary>
+                    <div class="text-gray-600 mt-4 leading-relaxed pl-2 border-l-4 border-disyOrange">
+                        Oui, nous acceptons les livraisons à domicile une fois le colis arrivé. Les frais varient selon votre localisation.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION AVIS CLIENTS -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-disyBlue text-center mb-12">Ils nous font confiance</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Avis 1 -->
+                <div class="bg-gray-50 p-6 rounded-xl border border-gray-100 shadow-sm">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 italic mb-4">"J'expédie mes cartons de cosmétiques avec DISY depuis 1 an. Jamais de casse, et le service client est toujours disponible sur WhatsApp."</p>
+                    <p class="font-bold text-disyBlue">- Mariam K.</p>
+                </div>
+                <!-- Avis 2 -->
+                <div class="bg-gray-50 p-6 rounded-xl border border-gray-100 shadow-sm">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 italic mb-4">"Le ramassage à Marcory le lundi m'arrange vraiment. Plus besoin de me déplacer jusqu'à la Palmeraie."</p>
+                    <p class="font-bold text-disyBlue">- Stéphane A.</p>
+                </div>
+                <!-- Avis 3 -->
+                <div class="bg-gray-50 p-6 rounded-xl border border-gray-100 shadow-sm">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="text-gray-600 italic mb-4">"Service rapide pour la Chine. Mon colis Express est arrivé en 5 jours comme promis."</p>
+                    <p class="font-bold text-disyBlue">- Lucien G.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER & MAP -->
+    <footer id="contact" class="bg-disyBlue text-white pt-10 pb-0">
+        <!-- MAP -->
+        <div class="w-full h-64 md:h-80 bg-gray-300 relative">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.540868465053!2d-3.9666!3d5.3400!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1ec7c8c6c6c6d%3A0x123456789abcdef!2sRiviera%20Palmeraie%2C%20Rue%20Ministre%2C%20Abidjan!5e0!3m2!1sfr!2sci!4v1620000000000!5m2!1sfr!2sci" 
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy"
+                class="absolute inset-0 grayscale hover:grayscale-0 transition duration-500">
+            </iframe>
+            <div class="absolute inset-0 bg-disyBlue bg-opacity-20 pointer-events-none"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+                <div>
+                    <img src="https://i.postimg.cc/gJgDYkXq/1.png" alt="Disy Global Logo" class="h-16 mb-6 bg-white p-2 rounded">
+                    <p class="text-gray-400 mb-6">Votre partenaire de confiance pour l'import-export. Qualité et Sécurité avant tout.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold mb-6 text-white border-b border-gray-700 pb-2 inline-block">Nous trouver</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 text-disyOrange mr-3"></i>
+                            <div>
+                                <p class="font-bold">Siège : Riviera Palmeraie</p>
+                                <p class="text-gray-300 text-sm">Rue Ministre, Abidjan</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-truck mt-1 text-disyOrange mr-3"></i>
+                            <div>
+                                <p class="font-bold">Points de collecte</p>
+                                <p class="text-gray-300 text-sm">Treichville & Marcory (Lun/Mer)</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt mt-1 text-disyOrange mr-3"></i>
+                            <a href="tel:+2250172914747" class="text-gray-300 hover:text-white font-bold">+225 01 72 91 47 47</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white/10 p-6 rounded-xl backdrop-blur-sm h-fit">
+                    <button onclick="downloadVCard()" class="w-full bg-disyOrange text-white font-bold py-3 px-4 rounded hover:bg-orange-600 transition flex items-center justify-center mb-2">
+                        <i class="fas fa-save mr-2"></i> Enregistrer le Contact
+                    </button>
+                    <p class="text-xs text-center text-gray-400">Ajoutez DISY à votre répertoire en 1 clic.</p>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-8 text-center text-gray-500 text-sm flex flex-col md:flex-row justify-between items-center">
+                <p>&copy; DISY GLOBAL. Tous droits réservés.</p>
+                <div class="mt-4 md:mt-0">
+                    <button onclick="toggleModal()" class="text-gray-400 hover:text-white underline text-sm">Conditions Générales de Vente (CGV)</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOUTON FLOTTANT WHATSAPP -->
+    <a href="https://wa.me/2250172914747" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition z-50 animate-bounce-slow flex items-center justify-center w-16 h-16 text-3xl">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- BOUTON RETOUR EN HAUT -->
+    <button id="backToTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="fixed bottom-24 right-8 bg-disyBlue text-white w-10 h-10 rounded-full shadow-lg items-center justify-center transition-opacity duration-300 opacity-0 hidden hover:bg-gray-700 z-40 text-sm">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- MODAL CGV -->
+    <div id="modal-cgv" class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center z-[100]">
+        <div class="modal-overlay absolute w-full h-full bg-black opacity-50" onclick="toggleModal()"></div>
+        
+        <div class="modal-container bg-white w-11/12 md:max-w-3xl mx-auto rounded shadow-lg z-50 overflow-y-auto max-h-[90vh]">
+            
+            <!-- Header Modal -->
+            <div class="modal-content py-4 text-left px-6">
+                <div class="flex justify-between items-center pb-3 border-b">
+                    <p class="text-2xl font-bold text-disyBlue">Conditions Générales de Vente</p>
+                    <div class="modal-close cursor-pointer z-50 p-2" onclick="toggleModal()">
+                        <i class="fas fa-times text-gray-500 hover:text-red-500 text-xl"></i>
+                    </div>
+                </div>
+
+                <!-- Body Modal -->
+                <div class="my-5 text-gray-600 text-sm space-y-4 overflow-y-auto max-h-[60vh] pr-2">
+                    <p><strong>1. Objet :</strong> Les présentes conditions régissent les services d'expédition et de groupage fournis par DISY GLOBAL.</p>
+                    
+                    <p><strong>2. Responsabilité & Assurances :</strong> DISY GLOBAL s'engage à traiter vos colis avec le plus grand soin. Cependant, notre responsabilité est limitée en cas de force majeure. Pour les produits électroniques et fragiles (verre, liquide), un emballage spécifique est obligatoire. En cas d'emballage insuffisant, aucune réclamation ne sera acceptée.</p>
+                    
+                    <p><strong>3. Articles Interdits :</strong> Sont strictement interdits : Armes, munitions, drogues, produits inflammables dangereux, argent liquide, et tout produit contraire aux lois ivoiriennes et internationales.</p>
+                    
+                    <p><strong>4. Délais :</strong> Les délais (Express 3-6j, Maritime 60j) sont donnés à titre indicatif et peuvent varier selon les aléas du transport aérien/maritime ou des douanes.</p>
+                    
+                    <p><strong>5. Douane :</strong> Pour les services "Groupage GP" et "Chine", les frais de douane sont inclus. Pour le service "Express Monde" (DHL/FedEx...), la douane est à la charge exclusive du destinataire.</p>
+                    
+                    <p><strong>6. Réclamations :</strong> Toute réclamation concernant une avarie ou un manquant doit être formulée dans les 48 heures suivant la réception du colis.</p>
+                </div>
+
+                <!-- Footer Modal -->
+                <div class="flex justify-end pt-2 border-t">
+                    <button onclick="toggleModal()" class="px-4 py-2 bg-disyBlue p-3 rounded-lg text-white hover:bg-blue-900">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script>
+        // Menu Mobile
+        function toggleMenu() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        }
+
+        // Modal CGV Logic
+        function toggleModal() {
+            const body = document.querySelector('body');
+            const modal = document.getElementById('modal-cgv');
+            modal.classList.toggle('opacity-0');
+            modal.classList.toggle('pointer-events-none');
+            body.classList.toggle('modal-active');
+        }
+
+        // Logic Calculateur
+        function updateUnitLabel() {
+            const route = document.getElementById('calc-route').value;
+            const label = document.getElementById('calc-label');
+            if (route === 'chi-sea') {
+                label.innerText = "Volume (en CBM)";
+                document.getElementById('calc-weight').placeholder = "Ex: 1.5";
+            } else {
+                label.innerText = "Poids du colis (en Kg)";
+                document.getElementById('calc-weight').placeholder = "Ex: 5";
+            }
+        }
+
+        function calculatePrice() {
+            const route = document.getElementById('calc-route').value;
+            const weight = parseFloat(document.getElementById('calc-weight').value);
+            const resultDiv = document.getElementById('calc-result');
+            const amountSpan = document.getElementById('calc-amount');
+            const waLink = document.getElementById('whatsapp-link-calc');
+            
+            if (!weight || weight <= 0) {
+                alert("Veuillez entrer un poids ou volume valide.");
+                return;
+            }
+
+            let price = 0;
+            let unit = 'kg';
+
+            switch(route) {
+                case 'abi-par':
+                    price = weight * 6500;
+                    break;
+                case 'par-abi':
+                    price = weight * 7000;
+                    break;
+                case 'chi-exp':
+                    price = weight * 15000;
+                    break;
+                case 'chi-gp':
+                    price = weight * 9500;
+                    break;
+                case 'chi-sea':
+                    price = weight * 290000;
+                    unit = 'CBM';
+                    break;
+                case 'usa-abi':
+                    if (weight >= 10) {
+                        price = weight * 12000;
+                    } else {
+                        price = weight * 15000;
+                    }
+                    break;
+            }
+
+            // Formatage du prix
+            const formattedPrice = new Intl.NumberFormat('fr-FR').format(price) + " FCFA";
+            
+            // Affichage
+            resultDiv.classList.remove('hidden');
+            amountSpan.innerText = formattedPrice;
+
+            // Mise à jour lien WhatsApp
+            const message = `Bonjour DISY, j'ai fait une estimation sur le site pour ${weight} ${unit} (Route: ${route}). Estimation: ${formattedPrice}. Est-ce correct ?`;
+            waLink.href = `https://wa.me/2250172914747?text=${encodeURIComponent(message)}`;
+        }
+
+        // vCard
+        function downloadVCard() {
+            const vCardData = `BEGIN:VCARD
+VERSION:3.0
+FN:DISY GLOBAL
+ORG:DISY GLOBAL
+TITLE:Service Expédition & Groupage
+TEL;TYPE=WORK,VOICE:+2250172914747
+URL:https://www.facebook.com/disyglobal
+ADR:;;Riviera Palmeraie Rue Ministre;Abidjan;;;
+NOTE:Expédition Abidjan-Paris-Chine. Ramassage Treichville/Marcory.
+END:VCARD`;
+            const blob = new Blob([vCardData], { type: 'text/vcard' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.style.display = 'none';
+            a.href = url;
+            a.download = 'DISY_GLOBAL.vcf';
+            document.body.appendChild(a);
+            a.click();
+            window.URL.revokeObjectURL(url);
+            document.body.removeChild(a);
+        }
+
+        // Scroll Logic (Navbar Shadow & BackToTop)
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            const backToTop = document.getElementById('backToTop');
+            
+            // Navbar
+            if (window.scrollY > 50) {
+                navbar.classList.add('shadow-lg');
+            } else {
+                navbar.classList.remove('shadow-lg');
+            }
+
+            // BackToTop
+            if (window.scrollY > 300) {
+                backToTop.classList.remove('hidden');
+                setTimeout(() => backToTop.classList.remove('opacity-0'), 10);
+            } else {
+                backToTop.classList.add('opacity-0');
+                setTimeout(() => backToTop.classList.add('hidden'), 300);
+            }
+        });
+    </script>
+</body>
+</html>
