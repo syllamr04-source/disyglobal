@@ -3,35 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DISY GLOBAL - Expert en Groupage & Expédition Internationale</title>
-    <meta name="description" content="Expédition Abidjan-Paris-USA-Chine-Dubaï. Service fiable et sécurisé. Groupage maritime et aérien.">
     
-    <!-- ==========================================================================
-         OPTIMISATION PARTAGE SOCIAL (WHATSAPP / FACEBOOK)
-         Ces balises permettent d'avoir un bel aperçu quand on partage le lien
-    ========================================================================== -->
+    <!-- 
+    ################################################################################
+    👇👇👇 [ZONE MODIFIABLE 1] : SEO & INFO GOOGLE 👇👇👇
+    ################################################################################ 
+    -->
+    <title>DISY GLOBAL - Groupage Maritime & Aérien | Chine - USA - Europe vers Abidjan</title>
+    
+    <meta name="description" content="Service d'expédition fiable vers la Côte d'Ivoire. Groupage maritime et aérien depuis la Chine, les USA et la France. Dédouanement inclus. Service de conciergerie et achat en ligne sécurisé.">
+    <!-- 👆👆👆 FIN ZONE MODIFIABLE 1 👆👆👆 -->
+
+    <meta name="keywords" content="groupage abidjan, import chine cote d'ivoire, fret aerien abidjan, disy global, transport colis france abidjan, conciergerie achat en ligne, alibaba abidjan, shein cote d'ivoire">
+    <meta name="author" content="DISY GLOBAL">
+    <meta name="robots" content="index, follow">
+
+    <!-- Optimisation Partage Réseaux Sociaux -->
     <meta property="og:title" content="DISY GLOBAL - Expédition & Groupage International">
-    <meta property="og:description" content="Vos colis entre de bonnes mains. Abidjan ↔ Paris, Chine, USA, Dubaï. Fiabilité garantie.">
-    <meta property="og:image" content="https://i.postimg.cc/gJgDYkXq/1.png"> <!-- https://zupimages.net/viewer.php?id=25/50/dzly.jpg -->
+    <meta property="og:description" content="Vos colis entre de bonnes mains. Abidjan ↔ Paris, Chine, USA. Fiabilité garantie.">
+    <meta property="og:image" content="https://i.postimg.cc/gJgDYkXq/1.png">
     <meta property="og:url" content="https://disyglobal.com">
     <meta property="og:type" content="website">
 
-    <!-- FAVICON (Petite icône dans l'onglet) -->
-    <link rel="icon" href="https://i.postimg.cc/gJgDYkXq/1.png" type="image/png">
+    <!-- Données Structurées pour Google (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "DISY GLOBAL",
+      "image": "https://i.postimg.cc/gJgDYkXq/1.png",
+      "telephone": "+2250172914747",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rue Ministre, Riviera Palmeraie",
+        "addressLocality": "Abidjan",
+        "addressCountry": "CI"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "08:00",
+        "closes": "18:00"
+      }
+    }
+    </script>
 
-    <!-- ESPACE MARKETING DIGITAL -->
-    <!-- Collez ici vos scripts : Google Analytics (GA4), Facebook Pixel, TikTok Pixel -->
-    
-    <!-- Tailwind CSS -->
+    <link rel="icon" href="https://i.postimg.cc/gJgDYkXq/1.png" type="image/png">
     <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    <!-- Configuration -->
     <script>
         tailwind.config = {
             theme: {
@@ -54,24 +76,16 @@
 
     <style>
         .hero-bg {
+            /* 👇👇👇 [ZONE MODIFIABLE] : IMAGE DE FOND ACCUEIL 👇👇👇 */
             background-image: linear-gradient(rgba(14, 43, 72, 0.85), rgba(14, 43, 72, 0.7)), url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            /* 👆👆👆 FIN ZONE MODIFIABLE 👆👆👆 */
             background-size: cover;
             background-position: center;
         }
-        details > summary {
-            list-style: none;
-        }
-        details > summary::-webkit-details-marker {
-            display: none;
-        }
-        /* Modal CGV */
-        .modal {
-            transition: opacity 0.25s ease;
-        }
-        body.modal-active {
-            overflow-x: hidden;
-            overflow-y: visible !important;
-        }
+        details > summary { list-style: none; }
+        details > summary::-webkit-details-marker { display: none; }
+        .modal { transition: opacity 0.25s ease; }
+        body.modal-active { overflow-x: hidden; overflow-y: visible !important; }
     </style>
 </head>
 <body class="font-sans text-gray-800 bg-white">
@@ -81,48 +95,64 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-24 md:h-28">
                 <div class="flex-shrink-0 flex items-center">
-                    <!-- LOGO -->
-                    <img class="h-20 md:h-24 w-auto transition-all duration-300" src="https://i.postimg.cc/gJgDYkXq/1.png" alt="DISY Global Logo">
+                    <!-- LOGO AVEC ZOOM LEGER (hover:scale-110) -->
+                    <img class="h-20 md:h-24 w-auto transition-transform duration-300 hover:scale-110 cursor-pointer" src="https://i.postimg.cc/gJgDYkXq/1.png" alt="DISY Global Logo Transport International" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
                 </div>
-                <!-- Desktop Menu -->
+                <!-- Menu Ordi -->
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="#accueil" class="text-gray-700 hover:text-disyOrange font-medium">Accueil</a>
-                    <a href="#comment-ca-marche" class="text-gray-700 hover:text-disyOrange font-medium">Fonctionnement</a>
-                    <a href="#destinations" class="text-gray-700 hover:text-disyOrange font-medium">Tarifs</a>
-                    <a href="#faq" class="text-gray-700 hover:text-disyOrange font-medium">FAQ</a>
-                    <a href="https://wa.me/2250172914747" class="bg-disyOrange text-white px-5 py-2 rounded-full font-bold hover:bg-orange-600 transition shadow-lg">
+                    <a href="#accueil" class="text-gray-700 hover:text-disyOrange font-medium transition">Accueil</a>
+                    <a href="#comment-ca-marche" class="text-gray-700 hover:text-disyOrange font-medium transition">Fonctionnement</a>
+                    <a href="#destinations" class="text-gray-700 hover:text-disyOrange font-medium transition">Tarifs</a>
+                    
+                    <!-- BOUTON SUIVRE MON COLIS (Lien Externe Direct) -->
+                    <a href="https://disy-global.vercel.app/" target="_blank" class="text-gray-700 hover:text-disyOrange font-medium flex items-center gap-2 transition">
+                        <i class="fas fa-search-location"></i> Suivi
+                    </a>
+
+                    <!-- Bouton Contact Header -->
+                    <a href="https://wa.me/2250172914747" class="bg-disyOrange text-white px-5 py-2 rounded-full font-bold hover:bg-orange-600 transition shadow-lg transform hover:-translate-y-0.5">
                         <i class="fab fa-whatsapp mr-2"></i> Nous Contacter
                     </a>
                 </div>
-                <!-- Mobile Menu Button -->
+                <!-- Menu Mobile Bouton -->
                 <div class="flex items-center md:hidden">
-                    <button onclick="toggleMenu()" class="text-disyBlue hover:text-disyOrange focus:outline-none p-2">
+                    <button onclick="toggleMenu()" class="text-disyBlue hover:text-disyOrange focus:outline-none p-2" aria-label="Ouvrir le menu">
                         <i class="fas fa-bars text-3xl"></i>
                     </button>
                 </div>
             </div>
         </div>
-        <!-- Mobile Menu Dropdown -->
+        <!-- Menu Mobile Liste -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a href="#accueil" onclick="toggleMenu()" class="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-disyOrange">Accueil</a>
                 <a href="#comment-ca-marche" onclick="toggleMenu()" class="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-disyOrange">Comment ça marche</a>
                 <a href="#destinations" onclick="toggleMenu()" class="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-disyOrange">Tarifs</a>
-                <a href="#faq" onclick="toggleMenu()" class="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-disyOrange">FAQ</a>
+                
+                <!-- Lien Suivi Mobile -->
+                <a href="https://disy-global.vercel.app/" target="_blank" onclick="toggleMenu()" class="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-disyOrange">
+                    <i class="fas fa-search-location mr-2"></i> Suivre mon colis
+                </a>
             </div>
         </div>
     </nav>
 
-    <!-- HERO SECTION -->
+    <!-- HERO SECTION (ACCUEIL) -->
     <section id="accueil" class="hero-bg h-screen min-h-[600px] flex items-center justify-center text-white pt-24">
         <div class="text-center px-4 max-w-4xl mx-auto animate-fade-in-up">
             <span class="bg-disyOrange text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide mb-4 inline-block">Leader en fiabilité</span>
+            
+            <!-- 
+            👇👇👇 [ZONE MODIFIABLE 2] : GROS TITRE ACCUEIL 👇👇👇 
+            -->
             <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
                 Vos colis entre de <br><span class="text-disyOrange">bonnes mains.</span>
             </h1>
             <p class="text-lg md:text-xl mb-8 text-gray-200 max-w-2xl mx-auto">
-                Spécialiste du groupage et de l'expédition express. Abidjan, Paris, Chine, USA, Dubaï. Nous privilégions la sécurité et la qualité de service.
+                Spécialiste du groupage et de l'expédition express. Abidjan, Paris, Chine, USA. Nous privilégions la sécurité et la qualité de service.
             </p>
+            <!-- 👆👆👆 FIN ZONE MODIFIABLE 2 👆👆👆 -->
+
             <div class="flex flex-col sm:flex-row justify-center gap-4">
                 <a href="#calculateur" class="bg-white text-disyBlue font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition shadow-lg transform hover:-translate-y-1">
                     Estimer mon colis
@@ -146,41 +176,47 @@
                 <div class="hidden md:block absolute top-12 left-0 w-full h-1 bg-gray-100 -z-10"></div>
 
                 <!-- Etape 1 -->
-                <div class="bg-white p-6 rounded-xl">
+                <div class="bg-white p-6 rounded-xl hover:shadow-lg transition duration-300">
                     <div class="w-24 h-24 bg-disyBlue text-white rounded-full flex items-center justify-center mx-auto mb-6 text-3xl border-4 border-white shadow-lg">
                         <i class="fas fa-box-open"></i>
                     </div>
+                    <!-- 👇 MODIFIABLE : ETAPE 1 👇 -->
                     <h3 class="text-xl font-bold mb-3 text-disyBlue">1. Dépôt ou Commande</h3>
                     <p class="text-gray-600 text-sm">
                         Déposez à la <strong>Riviera Palmeraie</strong>.<br>
                         <span class="text-disyOrange font-bold">Ramassage Treichville & Marcory</span> les Lundis et Mercredis.<br>
                         Ou faites livrer vos achats en ligne chez nous.
                     </p>
+                    <!-- 👆 FIN MODIFIABLE 👆 -->
                 </div>
 
                 <!-- Etape 2 -->
-                <div class="bg-white p-6 rounded-xl">
+                <div class="bg-white p-6 rounded-xl hover:shadow-lg transition duration-300">
                     <div class="w-24 h-24 bg-disyOrange text-white rounded-full flex items-center justify-center mx-auto mb-6 text-3xl border-4 border-white shadow-lg">
                         <i class="fas fa-plane"></i>
                     </div>
+                    <!-- 👇 MODIFIABLE : ETAPE 2 👇 -->
                     <h3 class="text-xl font-bold mb-3 text-disyBlue">2. Expédition Sécurisée</h3>
                     <p class="text-gray-600 text-sm">
                         Nous groupons et protégeons vos colis.<br>
                         <strong>Douane Incluse</strong> pour Chine & Groupage.<br>
                         Délais garantis et suivi constant.
                     </p>
+                    <!-- 👆 FIN MODIFIABLE 👆 -->
                 </div>
 
                 <!-- Etape 3 -->
-                <div class="bg-white p-6 rounded-xl">
+                <div class="bg-white p-6 rounded-xl hover:shadow-lg transition duration-300">
                     <div class="w-24 h-24 bg-disyBlue text-white rounded-full flex items-center justify-center mx-auto mb-6 text-3xl border-4 border-white shadow-lg">
                         <i class="fas fa-hand-holding-heart"></i>
                     </div>
+                    <!-- 👇 MODIFIABLE : ETAPE 3 👇 -->
                     <h3 class="text-xl font-bold mb-3 text-disyBlue">3. Réception</h3>
                     <p class="text-gray-600 text-sm">
                         Retrait en agence ou <strong>livraison à domicile</strong>.<br>
                         Votre satisfaction est notre priorité.
                     </p>
+                    <!-- 👆 FIN MODIFIABLE 👆 -->
                 </div>
             </div>
         </div>
@@ -197,10 +233,15 @@
             
             <div class="bg-white rounded-2xl p-2 md:p-6 shadow-md text-center max-w-5xl mx-auto border border-gray-200">
                 <div class="w-full flex justify-center bg-gray-100 rounded-xl overflow-hidden">
-                    <!-- IMAGE PROMO (MODIFIABLE) -->
-                    <img src="https://images.unsplash.com/photo-1506606352681-649023fac596?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
-                         alt="Affiche Promo ou Calendrier" 
-                         class="w-full max-h-[600px] object-contain">
+                    
+                    <!-- 
+                    👇👇👇 [ZONE MODIFIABLE 3] : L'IMAGE DU PLANNING / PROMO 👇👇👇
+                    -->
+                    <img src="https://zupimages.net/up/25/50/dzly.jpg" 
+                         alt="Calendrier des départs et Promotions DISY Global" 
+                         class="w-full max-h-[800px] object-contain">
+                    <!-- 👆👆👆 FIN ZONE MODIFIABLE 3 👆👆👆 -->
+                         
                 </div>
                 <p class="mt-4 text-sm text-gray-500 italic">
                     <i class="fas fa-info-circle mr-1"></i> Vérifiez toujours la disponibilité via WhatsApp.
@@ -219,7 +260,9 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
-                <!-- CARTE: ABIDJAN <-> PARIS -->
+                <!-- 
+                👇👇👇 [ZONE MODIFIABLE 4] : CARTE ABIDJAN-PARIS 👇👇👇 
+                -->
                 <div class="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
                     <div class="bg-disyBlue p-6 text-white text-center relative">
                         <i class="fas fa-plane-departure text-4xl absolute left-4 top-6 opacity-20"></i>
@@ -236,15 +279,18 @@
                         </div>
                         <div class="bg-blue-50 p-3 rounded-lg text-sm text-disyBlue mt-4">
                             <i class="fas fa-check-circle mr-1"></i> Douane incluse (GP)<br>
-                            <i class="fas fa-info-circle mr-1"></i> Tarif spécial Parfums/Cosmétiques
+                            <i class="fas fa-exclamation-circle mr-1"></i> <strong>Note:</strong> Prix variables si volume important.
                         </div>
                         <a href="https://wa.me/2250172914747?text=Bonjour,%20je%20souhaite%20expédier%20entre%20Paris%20et%20Abidjan" class="block w-full text-center bg-gray-100 text-disyBlue py-2 rounded-lg font-semibold hover:bg-disyOrange hover:text-white transition">
                             <i class="fab fa-whatsapp mr-1"></i> Commander
                         </a>
                     </div>
                 </div>
+                <!-- 👆👆👆 FIN ZONE MODIFIABLE 4 👆👆👆 -->
 
-                <!-- CARTE: IMPORT CHINE -->
+                <!-- 
+                👇👇👇 [ZONE MODIFIABLE 5] : CARTE CHINE (AVEC BATTERIE) 👇👇👇 
+                -->
                 <div class="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
                     <div class="bg-red-700 p-6 text-white text-center relative">
                         <i class="fas fa-globe-asia text-4xl absolute left-4 top-6 opacity-20"></i>
@@ -253,6 +299,10 @@
                     <div class="p-6 space-y-4">
                         <div class="flex justify-between items-center border-b pb-2">
                             <span class="text-gray-600">Express (3-6j)</span>
+                            <span class="font-bold text-disyOrange text-lg">15 000 F/kg</span>
+                        </div>
+                        <div class="flex justify-between items-center border-b pb-2">
+                            <span class="text-gray-600">Produits à batterie</span>
                             <span class="font-bold text-disyOrange text-lg">15 000 F/kg</span>
                         </div>
                         <div class="flex justify-between items-center border-b pb-2">
@@ -274,12 +324,15 @@
                          </a>
                     </div>
                 </div>
+                <!-- 👆👆👆 FIN ZONE MODIFIABLE 5 👆👆👆 -->
 
-                <!-- CARTE: USA & DUBAÏ -->
+                <!-- 
+                👇👇👇 [ZONE MODIFIABLE 6] : CARTE USA (SANS DUBAI) 👇👇👇 
+                -->
                 <div class="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
                     <div class="bg-indigo-900 p-6 text-white text-center relative">
                         <i class="fas fa-flag-usa text-4xl absolute left-4 top-6 opacity-20"></i>
-                        <h3 class="text-2xl font-bold">USA & Dubaï</h3>
+                        <h3 class="text-2xl font-bold">USA</h3>
                     </div>
                     <div class="p-6 space-y-4">
                         <p class="font-bold text-disyBlue border-b pb-1">Abidjan <i class="fas fa-arrow-right text-xs"></i> New York</p>
@@ -297,11 +350,13 @@
                             <i class="fas fa-exclamation-triangle"></i> Douane à charge client (Express)
                         </div>
 
-                         <a href="https://wa.me/2250172914747?text=Bonjour,%20je%20suis%20intéressé%20par%20USA/Dubai" class="block w-full text-center bg-gray-100 text-disyBlue py-2 rounded-lg font-semibold hover:bg-disyOrange hover:text-white transition">
+                         <a href="https://wa.me/2250172914747?text=Bonjour,%20je%20suis%20intéressé%20par%20USA" class="block w-full text-center bg-gray-100 text-disyBlue py-2 rounded-lg font-semibold hover:bg-disyOrange hover:text-white transition">
                             <i class="fab fa-whatsapp mr-1"></i> Commander
                          </a>
                     </div>
                 </div>
+                <!-- 👆👆👆 FIN ZONE MODIFIABLE 6 👆👆👆 -->
+
             </div>
         </div>
     </section>
@@ -320,14 +375,20 @@
                         <!-- Choix de la route -->
                         <div>
                             <label class="block text-sm font-medium mb-2">Trajet / Service</label>
+                            
+                            <!-- 
+                            👇👇👇 [ZONE MODIFIABLE 7] : TEXTE DE LA LISTE DEROULANTE CALCULATEUR 👇👇👇
+                            -->
                             <select id="calc-route" onchange="updateUnitLabel()" class="w-full p-4 rounded-lg text-gray-900 bg-white focus:ring-2 focus:ring-disyOrange outline-none">
                                 <option value="abi-par">Abidjan vers Paris (6500 F/kg)</option>
                                 <option value="par-abi">Paris vers Abidjan (7000 F/kg)</option>
                                 <option value="chi-exp">Chine Express (15000 F/kg)</option>
+                                <option value="chi-batt">Chine Produit Batterie (15000 F/kg)</option>
                                 <option value="chi-gp">Chine Groupage (9500 F/kg)</option>
                                 <option value="chi-sea">Chine Maritime (290 000 F/CBM)</option>
                                 <option value="usa-abi">Abidjan vers New York (12k ou 15k/kg)</option>
                             </select>
+                            <!-- 👆👆👆 FIN ZONE MODIFIABLE 7 👆👆👆 -->
                         </div>
 
                         <!-- Poids ou Volume -->
@@ -356,20 +417,29 @@
         </div>
     </section>
 
-    <!-- SECTION SERVICES PLUS -->
+    <!-- SECTION SERVICES PLUS (Conciergerie) -->
     <section id="services" class="py-16 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div class="order-2 md:order-1 relative">
-                    <!-- Image Paiement Sécurisé -->
-                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Paiement en ligne sécurisé" class="rounded-lg shadow-2xl relative z-10">
+                    
+                    <!-- 
+                    👇👇👇 [ZONE MODIFIABLE 8] : IMAGE CONCIERGERIE E-COMMERCE PUR 👇👇👇
+                    Image avec ordinateur, carte de crédit et achats en ligne (sans humains)
+                    -->
+                    <img src="https://images.unsplash.com/photo-1607082349566-187342175e2f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                         alt="Shopping en ligne, carte bancaire et ordinateur" 
+                         class="rounded-lg shadow-2xl relative z-10 w-full object-cover h-80 md:h-full">
+                    <!-- 👆👆👆 FIN ZONE MODIFIABLE 8 👆👆👆 -->
+                         
                     <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-disyOrange rounded-full opacity-20 z-0"></div>
                 </div>
                 <div class="order-1 md:order-2">
+                    <!-- 👇 MODIFIABLE : TEXTE CONCIERGERIE 👇 -->
                     <span class="text-disyOrange font-bold tracking-wider uppercase text-sm">Service Conciergerie</span>
                     <h2 class="text-3xl md:text-4xl font-bold text-disyBlue mb-6 mt-2">Achetez en ligne, nous livrons chez vous.</h2>
                     <p class="text-gray-600 mb-6 text-lg">
-                        Validation de paniers Alibaba, Shein, Amazon... Nous payons pour vous en toute sécurité.
+                        Validation de paniers Alibaba, Shein, Amazon... Nous payons pour vous en toute sécurité et gérons le transport jusqu'à Abidjan.
                     </p>
                     <ul class="space-y-4">
                         <li class="flex items-start">
@@ -381,6 +451,8 @@
                             <p class="text-gray-700"><strong>Livraison & Collecte :</strong> Nous livrons et récupérons vos colis.</p>
                         </li>
                     </ul>
+                    <!-- 👆 FIN MODIFIABLE 👆 -->
+                    
                     <a href="https://wa.me/2250172914747?text=Bonjour,%20je%20veux%20faire%20valider%20un%20panier" class="inline-block mt-6 bg-disyBlue text-white px-6 py-3 rounded-lg hover:bg-opacity-90 transition">
                         Faire valider mon panier
                     </a>
@@ -398,6 +470,10 @@
             </div>
 
             <div class="space-y-4">
+                <!-- 
+                👇👇👇 [ZONE MODIFIABLE 9] : VOS QUESTIONS FAQ 👇👇👇
+                -->
+                
                 <!-- Question 1 -->
                 <details class="group bg-white rounded-xl shadow-sm p-4 cursor-pointer">
                     <summary class="flex justify-between items-center font-bold text-disyBlue text-lg">
@@ -446,6 +522,7 @@
                         Oui, nous acceptons les livraisons à domicile une fois le colis arrivé. Les frais varient selon votre localisation.
                     </div>
                 </details>
+                <!-- 👆👆👆 FIN ZONE MODIFIABLE 9 👆👆👆 -->
             </div>
         </div>
     </section>
@@ -494,6 +571,7 @@
                 style="border:0;" 
                 allowfullscreen="" 
                 loading="lazy"
+                title="Localisation Disy Global Abidjan"
                 class="absolute inset-0 grayscale hover:grayscale-0 transition duration-500">
             </iframe>
             <div class="absolute inset-0 bg-disyBlue bg-opacity-20 pointer-events-none"></div>
@@ -504,11 +582,26 @@
                 <div>
                     <img src="https://i.postimg.cc/gJgDYkXq/1.png" alt="Disy Global Logo" class="h-16 mb-6 bg-white p-2 rounded">
                     <p class="text-gray-400 mb-6">Votre partenaire de confiance pour l'import-export. Qualité et Sécurité avant tout.</p>
+                    
+                    <!-- 
+                    👇👇👇 [ZONE MODIFIABLE] : LIEN FACEBOOK MODERNE 👇👇👇
+                    -->
+                    <div class="flex items-center gap-4">
+                        <a href="https://www.facebook.com/disyglobal" target="_blank" class="group flex items-center gap-2 text-gray-300 hover:text-white transition-colors">
+                            <span class="w-10 h-10 border border-white/30 rounded-full flex items-center justify-center group-hover:border-disyOrange group-hover:bg-disyOrange transition-all duration-300">
+                                <i class="fab fa-facebook-f"></i>
+                            </span>
+                            <span class="text-sm font-light uppercase tracking-wider group-hover:text-disyOrange transition-colors">Nous suivre</span>
+                        </a>
+                    </div>
                 </div>
 
                 <div>
                     <h3 class="text-xl font-bold mb-6 text-white border-b border-gray-700 pb-2 inline-block">Nous trouver</h3>
                     <ul class="space-y-4">
+                        <!-- 
+                        👇👇👇 [ZONE MODIFIABLE 10] : ADRESSE ET TELEPHONE 👇👇👇
+                        -->
                         <li class="flex items-start">
                             <i class="fas fa-map-marker-alt mt-1 text-disyOrange mr-3"></i>
                             <div>
@@ -527,6 +620,7 @@
                             <i class="fas fa-phone-alt mt-1 text-disyOrange mr-3"></i>
                             <a href="tel:+2250172914747" class="text-gray-300 hover:text-white font-bold">+225 01 72 91 47 47</a>
                         </li>
+                        <!-- 👆👆👆 FIN ZONE MODIFIABLE 10 👆👆👆 -->
                     </ul>
                 </div>
 
@@ -548,22 +642,19 @@
     </footer>
 
     <!-- BOUTON FLOTTANT WHATSAPP -->
-    <a href="https://wa.me/2250172914747" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition z-50 animate-bounce-slow flex items-center justify-center w-16 h-16 text-3xl">
+    <a href="https://wa.me/2250172914747" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition z-50 animate-bounce-slow flex items-center justify-center w-16 h-16 text-3xl" aria-label="Contacter sur WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
 
     <!-- BOUTON RETOUR EN HAUT -->
-    <button id="backToTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="fixed bottom-24 right-8 bg-disyBlue text-white w-10 h-10 rounded-full shadow-lg items-center justify-center transition-opacity duration-300 opacity-0 hidden hover:bg-gray-700 z-40 text-sm">
+    <button id="backToTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="fixed bottom-24 right-8 bg-disyBlue text-white w-10 h-10 rounded-full shadow-lg items-center justify-center transition-opacity duration-300 opacity-0 hidden hover:bg-gray-700 z-40 text-sm" aria-label="Retour en haut">
         <i class="fas fa-arrow-up"></i>
     </button>
 
     <!-- MODAL CGV -->
     <div id="modal-cgv" class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center z-[100]">
         <div class="modal-overlay absolute w-full h-full bg-black opacity-50" onclick="toggleModal()"></div>
-        
         <div class="modal-container bg-white w-11/12 md:max-w-3xl mx-auto rounded shadow-lg z-50 overflow-y-auto max-h-[90vh]">
-            
-            <!-- Header Modal -->
             <div class="modal-content py-4 text-left px-6">
                 <div class="flex justify-between items-center pb-3 border-b">
                     <p class="text-2xl font-bold text-disyBlue">Conditions Générales de Vente</p>
@@ -571,23 +662,15 @@
                         <i class="fas fa-times text-gray-500 hover:text-red-500 text-xl"></i>
                     </div>
                 </div>
-
-                <!-- Body Modal -->
+                <!-- TEXTE CGV -->
                 <div class="my-5 text-gray-600 text-sm space-y-4 overflow-y-auto max-h-[60vh] pr-2">
                     <p><strong>1. Objet :</strong> Les présentes conditions régissent les services d'expédition et de groupage fournis par DISY GLOBAL.</p>
-                    
                     <p><strong>2. Responsabilité & Assurances :</strong> DISY GLOBAL s'engage à traiter vos colis avec le plus grand soin. Cependant, notre responsabilité est limitée en cas de force majeure. Pour les produits électroniques et fragiles (verre, liquide), un emballage spécifique est obligatoire. En cas d'emballage insuffisant, aucune réclamation ne sera acceptée.</p>
-                    
                     <p><strong>3. Articles Interdits :</strong> Sont strictement interdits : Armes, munitions, drogues, produits inflammables dangereux, argent liquide, et tout produit contraire aux lois ivoiriennes et internationales.</p>
-                    
                     <p><strong>4. Délais :</strong> Les délais (Express 3-6j, Maritime 60j) sont donnés à titre indicatif et peuvent varier selon les aléas du transport aérien/maritime ou des douanes.</p>
-                    
                     <p><strong>5. Douane :</strong> Pour les services "Groupage GP" et "Chine", les frais de douane sont inclus. Pour le service "Express Monde" (DHL/FedEx...), la douane est à la charge exclusive du destinataire.</p>
-                    
                     <p><strong>6. Réclamations :</strong> Toute réclamation concernant une avarie ou un manquant doit être formulée dans les 48 heures suivant la réception du colis.</p>
                 </div>
-
-                <!-- Footer Modal -->
                 <div class="flex justify-end pt-2 border-t">
                     <button onclick="toggleModal()" class="px-4 py-2 bg-disyBlue p-3 rounded-lg text-white hover:bg-blue-900">Fermer</button>
                 </div>
@@ -624,6 +707,9 @@
             }
         }
 
+        // ####################################################################
+        // 👇👇👇 [ZONE MODIFIABLE 12] : LOGIQUE DE PRIX DU CALCULATEUR 👇👇👇
+        // ####################################################################
         function calculatePrice() {
             const route = document.getElementById('calc-route').value;
             const weight = parseFloat(document.getElementById('calc-weight').value);
@@ -639,31 +725,37 @@
             let price = 0;
             let unit = 'kg';
 
+            // PRIX PAR ROUTE
             switch(route) {
                 case 'abi-par':
-                    price = weight * 6500;
+                    price = weight * 6500; // 👈 PRIX Abidjan -> Paris (6500 F/kg)
                     break;
                 case 'par-abi':
-                    price = weight * 7000;
+                    price = weight * 7000; // 👈 PRIX Paris -> Abidjan (7000 F/kg)
                     break;
                 case 'chi-exp':
-                    price = weight * 15000;
+                    price = weight * 15000; // 👈 PRIX Chine Express
+                    break;
+                case 'chi-batt':
+                    price = weight * 15000; // 👈 PRIX Chine Batterie
                     break;
                 case 'chi-gp':
-                    price = weight * 9500;
+                    price = weight * 9500; // 👈 PRIX Chine Groupage
                     break;
                 case 'chi-sea':
-                    price = weight * 290000;
+                    price = weight * 290000; // 👈 PRIX Chine Maritime (par CBM)
                     unit = 'CBM';
                     break;
                 case 'usa-abi':
+                    // Logique spéciale pour les USA : si +10kg, prix réduit
                     if (weight >= 10) {
-                        price = weight * 12000;
+                        price = weight * 12000; // 👈 PRIX USA +10kg
                     } else {
-                        price = weight * 15000;
+                        price = weight * 15000; // 👈 PRIX USA Standard
                     }
                     break;
             }
+            // 👆👆👆 FIN ZONE MODIFIABLE 12 👆👆👆
 
             // Formatage du prix
             const formattedPrice = new Intl.NumberFormat('fr-FR').format(price) + " FCFA";
